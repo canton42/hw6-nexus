@@ -24,7 +24,7 @@ pipeline {
                 sh '''
                 curl -v -u admin:easy123456 \
                 --upload-file target/*.jar \
-                http://localhost:8081/repository/maven-releases/com/example/app/1.0/app-1.0.jar
+                http://host.docker.internal:8081/repository/maven-releases/com/example/app/1.0/app-1.0.jar
                 '''
             }
         }
